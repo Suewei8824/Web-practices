@@ -1,0 +1,151 @@
+body {
+    background-color: #F5FFFA;
+    display: relative;
+     
+    margin: 0;
+    padding: 0;      
+}
+#header {
+    background-color: #33CC99;
+    width: 700px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Century Gothic",Helvetica,Arial,sans-serif;
+}
+
+#nowDo {
+    width: 690px;
+    height: 35px;
+    position: relative;
+    border-style: solid;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border-color: #F5FFFA #009966 #F5FFFA #009966;
+}
+
+#removeBtn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 650px;
+    display: inline-block;
+}
+#remove {
+  position: absolute;
+  width: 21px;
+  height: 2.5px;
+  border-radius: 10px;
+  background-color: #EEE0E5;
+}
+ #remove::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  top: -4px;
+  left: 5.3px;
+  border-radius: 1px;
+  background-color: #FFDAB9;
+}
+#remove::after {
+  content: "";
+  position:absolute;
+  width: 15px;
+  height: 14px;
+  left: 3px;
+  top: 4px;
+  border-radius: 1px;
+  background-color: #FFDAB9;
+}
+
+#newP {
+    display: inline-block;
+    text-align: center;
+    line-height: 5px;
+}
+#checkBox {
+    width: 30px;
+}
+#inputCase {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border-style: solid;
+    position: relative;
+    left: 46%;
+    top: 30px;
+    transform: translateX(-45%);
+    background-color: #F7F7F7;
+}
+#submit:hover {
+    cursor: pointer;
+}
+#checkBox:hover {
+    cursor: pointer;
+}
+#remove:hover {
+    cursor: pointer;
+}
+#submit {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #FDF5E6;
+    position: relative;
+    left: 42%;
+    top: 30px;
+    transform: translateX(-45%);
+    text-align: center;
+    color: #003300;
+    font-size: 14px;
+}
+#now, #done {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    left: 33%;
+    top: 30px;
+    transform: translateX(-33%);
+    font-size: 20px;
+}
+#todolist{
+    position: relative;
+    width: 690px;
+    left: 31.8%;
+    top: 33px;
+    list-style-type:none;
+}
+#donelist {
+    position: relative;
+    width: 690px;
+    left: 31.8%;
+    top: 33px;
+    list-style-type:none;    
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+a {
+    text-decoration:none;
+}
+a:link    { color: #003333;}
+
+a:visited { color: #003333;}
+
+a:hover   { color: #003333;}
+
+a:active  { color: #003333;}
+
