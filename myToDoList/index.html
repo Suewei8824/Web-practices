@@ -4,19 +4,29 @@
         <meta charset="utf-8">
         <title>MyToDoList--Show You Your Insist</title>
         <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script type= "text/javascript" src="scripts/jquery.js"></script>
     </head>
     <body>
-        <header id="header">ToDoList</header>
-        <input type="text" placeholder="AddToDo" id="inputCase" />
-        <input id="submit" type="button" value="submit" onclick="btnClick()" />
+        <header class="header">ToDoList</header>
+        <div class="body">   
+            <div class="toolbar">       
+                <input type="text" placeholder="AddToDo" class="inputCase" />
+                <input class="submit-btn" type="button" value="Add" onclick="btnClick()" />
+            </div>
+            <div class="wrapper">
+                <ul class="rank">
+                    <li><input type="checkbox" value="3" id="checkrankone" class="check-rank check-rank-one" />Extremly</li>
+                    <li><input type="checkbox" value="2" id="checkranktwo" class="check-rank check-rank-two" />Fairly</li>
+                    <li><input type="checkbox" value="1" id="checkrankthree" class="check-rank check-rank-three" />Commonly</li>
+                </ul>
+                <p id="now">UNDERWAY</p>
+                <ul class="todolist"></ul>
 
-        <p id="now">Underway</p>
-        <div id="todolist"><ul></ul></div>
-
-        <p id="done">Done</p>
-        <div id="donelist"><ul></ul></div>
-        <footer id="footer">Copyright © 2017 <a href="https://github.com/Suewei8824">Suewei8824</a></footer>
-        <script src="scripts/addLoadEvent.js"></script>
-        <script src="scripts/btnClick.js"></script>
+                <p id="done">DONE</p>
+                <ul class="donelist"></ul>
+            </div>           
+        </div>
+        <footer class="footer">Copyright © 2017 <a href="https://github.com/Suewei8824">Suewei8824</a></footer>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
