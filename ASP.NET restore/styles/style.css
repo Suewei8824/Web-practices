@@ -1,0 +1,400 @@
+/*-------- base rules --------*/
+body {
+    margin: 0;
+    padding: 0; 
+    overflow: -scroll;
+    overflow-x: hidden;  
+}
+input[type=button] {
+    border: 0;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 4px;
+    text-align: center;
+}
+.logoImage{
+    position: relative;
+    margin: 10px;
+    left: 8%;
+    width:  109px;
+    height: 25px;
+}
+.handP:hover {
+    cursor: pointer;
+}
+/*-------- layout rules----nav --------*/
+ul li {
+    list-style-type: none;
+}
+.nav-wrapper {
+    width: 100%;
+    height: 60px;
+    top: 10px;
+    position: relative;
+}
+.nav-list {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 8%;
+    top: -30%;
+    height: 60px;
+}
+.main-li{
+    display: inline-block;
+    position: relative;
+    height: 60px;    
+}
+.hide {
+    display: none;
+}
+.nav-btn {
+    position: relative;
+    left: 10px;
+
+    width: 100px;
+    height: 60px;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    background-color: transparent;
+}
+
+.technique-list {
+    position: relative;
+}
+.tech-sons {
+    position: absolute;
+    top: 43px;
+    width: 250px;
+    height: 204px;
+    left: 0px;
+    z-index: 9999;
+    background-color: #EAEAEA;
+}
+.tech-son {
+    position: relative;
+    height: 68px;
+    line-height: 60px;
+}
+.docu-sons {
+    position: absolute;
+    top: 43px;
+    width: 250px;
+    height: 204px;
+    left: 0px;
+    z-index: 9999;
+    background-color: #EAEAEA;
+}
+.docu-son {
+    position: relative;
+    height: 68px;
+    line-height: 60px;
+}
+.reso-sons {
+    position: absolute;
+    top: 43px;
+    width: 250px;
+    height: 204px;
+    left: 0px;
+    z-index: 9999;
+    background-color: #EAEAEA;
+}
+.reso-son {
+    position: relative;
+    height: 68px;
+    line-height: 60px;
+}
+.search-case {
+    position: relative;
+    top: -30%;
+    left: 40%;
+    width: 200px;
+    height: 25px;
+}
+/*-------- layout rules----select page --------*/
+.same-li {
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: top;
+    width: 180px;
+    height: 44px;
+    text-align: center;
+    padding-top: 5px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #ccdcf3;
+}
+.same-li:hover   { 
+    background-color: rgba(0,80,197,0.07);;
+    position: relative;
+}
+.page-selected {
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: rgba(0,80,197,0.07) ;
+    position: relative;
+}
+.page-selected::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #0050c5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*-------- layout rules----footer --------*/
+.footer {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #00000f;
+    bottom: 0;
+    color: dodgerblue;
+}
+.section-one {
+    position: absolute;
+    left: 8%;
+    line-height: 80px;
+}
+.section-two > li {
+    position: relative;
+    display: inline-block;
+    left: 75%;
+    top: 30px;
+    font-size: 14px;
+}
+.nav-long-wrapper {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    background-color: #00000f;
+}
+.nav-long-list {
+    position: relative;
+    width: 780px;
+    height: 60px;
+    left: 6%;
+    line-height: 50px;
+}
+.main-long {
+    color: #ffffff;
+    width: 120px;
+    text-align: center;
+}
+.docs-list {
+    font-size: 20px;
+}
+.spe-font {
+    font-size: 14px;
+}
+.miro-list {
+    position: relative;
+    left: 22px;
+}
+.visu-list {
+    position: relative;
+    left: 55px;
+}
+.offi-list {
+    position: relative;
+    left: 58px;
+}
+.more-list {
+    position: relative;
+    left: 30px;
+}
+#bergBar {
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+}
+#middleMeat {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    top: 14px;
+    left: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+#middleMeat::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    top: -10px;
+    left: 0px;
+    border-radius: 1px;
+    background-color: transparent;
+}
+#middleMeat::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    top: 10px;
+    left: 0px;
+    border-radius: 1px;
+    background-color: transparent;  
+}
+@media screen and (max-width: 780px) {
+    .nav-long-list {
+        position: relative;
+    }
+    .nav-long-list > a {
+        display: block;
+        color: #000;
+    }
+    #middleMeat {
+        background-color: #0050c5;
+    }
+    #middleMeat::before {
+        background-color: #0050c5;
+    }
+    #middleMeat::after {
+        background-color: #0050c5;
+    }
+    .logoImage {
+        position: relative;
+        left: 50%;
+        top: -55px;
+        transform: translateX(-50%);
+    }
+    .main-li{
+        display: block;
+        position: relative;
+        left: -197px;
+        top: 65px;
+        height: 40px;   
+        opacity: 0; 
+    }
+    
+}
+
+.docs-href {
+    position: relative;
+    left: 8.5%;
+    font-size: 12px;
+}
+.still-h1 {
+    position: relative;
+    left: 8.5%;
+}
+.select-page {
+    display: inline-block;
+    position: relative;
+    width: 367px;
+    left: 8.5%;
+    padding: 0;
+}
+.replace-page {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+.replace-place {
+    position: absolute;
+    width: 100%;
+
+}
+.replace-subplaces {
+    position: relative;
+    left: 8%;
+    width: 100%;
+    height: 40px;
+    top: 0;
+}
+.replace-subplaces:nth-child(2) > ul {
+  top: -85px;
+}
+.replace-subplaces:nth-child(3) > ul {
+    top: -120px;
+}
+.description-span {
+    margin: 0;
+    position: relative;
+    top: 0px;
+}
+.side-btn {
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    line-height: 30px;
+}
+.side-btn-selected {
+    background-color: #0050c5;
+    color: #fff;
+}
+/*-------- card content rules aspcore--------*/
+.card-list {
+    position: relative;
+    left: 10%;
+    top: -50px;
+}
+.card-tutorials {
+    position: relative;
+    left: 10%;
+    top: 0;
+}
+.card-image {
+    width: 420px;
+    height: 270px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 0 2px;
+    margin: 10px;
+    background-color: #e4edf1;
+    overflow: hidden;
+}
+.card-image > img{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    left: 0%;
+    display: inline-block;
+}
+.card-image > div {
+    background-color: #fff;
+    height: 120px;
+}
+.card-image > div > h4 {
+    margin: 10px 0;
+    padding: 10px 0 0 15px;
+}
+.card-image > div > p {
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 0 0 0 15px;
+    color: #6e6e6e;
+}
+.card-text {
+    width: 420px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 0 2px;
+    margin: 10px;
+    background-color: #fff;
+}
+.card-text > div > h4 {
+    margin: 10px 0;
+    padding: 0 0 0 15px;
+}
+.card-text > div > p {
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 0 0 0 15px;
+    color: #6e6e6e; 
+}
