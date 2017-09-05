@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.bar-wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 35px;
+    background-color: #fff;
+    border: solid;
+    border-width: thin;
+    border-color: #ddd;
+    border-radius: 8px;
+}
+#pro-bar {
+    display: block;
+    height: 35px;
+    width: 5px;
+    position: relative;
+    border-radius: 8px;
+    line-height: 30px;
+    text-align: center;
+    background-color: lightblue;
+}
